@@ -46,6 +46,13 @@ Manually unlocking the LND wallet every time the system starts is not really fea
 
 Browse the blockchain in a private and autonomous way using data from your own node. You can also check different stats of your node and network.
 
+## [Samourai Dojo with Whirlpool CoinJoin](raspibolt_6C_dojo.md)
+
+*Difficulty: medium*
+
+Run [Samourai Dojo](https://samouraiwallet.com/dojo) as your own private backend for the Samourai mobile wallet.
+This also supports the CoinJoin feature called [Whirlpool](https://samouraiwallet.com/whirlpool), allowing you to break the link your coins leave behind.
+
 ## [Anonymous node with Tor](raspibolt_69_tor.md)
 
 *Difficulty: medium*
