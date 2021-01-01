@@ -14,7 +14,7 @@ Issues concerning the primary operations of your Umbrel node can be found in the
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+   {:toc}
 
 ### Can I get rich by routing Lightning payments?
 
