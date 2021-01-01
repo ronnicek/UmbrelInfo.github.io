@@ -14,7 +14,7 @@ This page is intended to answer your questions about Umbrel.
 ---
 
  This page is not an official Umbrel page.
- In addition, this page only applies to the latest version of Umbrel.
+ In addition, this page only applies to the latest version of Umbrel (currently v0.3.0).
 
 ---
 
@@ -41,5 +41,9 @@ This page is intended to answer your questions about Umbrel.
 
 Umbrel I still in beta and should not be considered secure.
 We do not recommend running it with much money yet.
+
+---
+
+This page is pat of [Umbrel Plus](https://UmbrelPlus.gitlab.io)
 
 ---

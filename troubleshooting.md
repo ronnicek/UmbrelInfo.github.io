@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Troubleshooting
-nav_order: 20
+nav_order: 10
 ---
 
 # Troubleshooting
@@ -23,28 +23,28 @@ General questions and further learnings regarding the technology used in Umbrel 
 1. TOC
    {:toc}
 
-### Common problems
+## Common problems
 
-#### Can I login using SSH?
+### Can I login using SSH?
 
-Yes! The username is `umbrel`, the password is `moneyprintergobrrr`.
+Yes! Open a terminal on your computer and enter `ssh umbrel@umbrel.local` and enter the password `moneyprintergobrrr`.
 
-#### Is my Raspberry Pi compatible?
+### Is my Raspberry Pi compatible?
 
 If you have a Raspberry Pi with at least 4GB of RAM, you can run Umbrel on it.
 
-#### My Umbrel node keeps crashing. What can I do to fix the issue?
+### My Umbrel node keeps crashing. What can I do to fix the issue?
 
 If you're not using the official power supply, it's probably the power supply.
 To detect undervoltage, connect to your node via SSH and run this command: `vcgencmd get_throttled`.
 If it doesn't output throttled=0x0, then it's either the power supply or your SSD is using too much power (this can only be the case if you're not using the recommended hardware).
 
-#### My Umbrel node doesn't boot. What can I do?
+### My Umbrel node doesn't boot. What can I do?
 
 Do you have connected anything to the GPIO pins?
 If yes, try to unplug it and reboot the RPi by unplugging the power supply and then plugging it back in.
 
-#### I can't access the dashboard at umbrel.local. What can I do?
+### I can't access the dashboard at umbrel.local. What can I do?
 
 Check if your router detects your node.
 If it doesn't, either you ethernet cable isn't plugged in correctly or the node doesn't boot.
@@ -59,11 +59,11 @@ If the output of that command contains "Exiting the mount script without anythin
 If the output doesn't contain this text, run `sudo systemctl start umbrel-startup`.
 You should now be able to access the dashboard.
 
-#### I want to connect to my node using ...... over my local network, but it doesn't work. How can I fix this?
+### I want to connect to my node using ...... over my local network, but it doesn't work. How can I fix this?
 
 If you want to connect to your Umbrel over the local network just replace your onion domain with umbrel.local for any of the connection strings.
 
-#### Setting a fixed address on the Raspberry Pi
+### Setting a fixed address on the Raspberry Pi
 
 If your router does not support setting a static ip address for a single device, you can also do this directly on the Raspberry Pi.
 
@@ -94,7 +94,7 @@ This can be done by configuring the DHCP-Client (on the Pi) to advertise a stati
 3. Restart networking system
    `sudo /etc/init.d/networking restart`
 
-#### Using WiFi instead of Ethernet
+### Using WiFi instead of Ethernet
 
 - Create a file `wpa_supplicant.conf` in the boot partition of the microSD card with the following content.
   Note that the network name (ssid) and password need to be in double-quotes (like `psk="password"`)
@@ -111,6 +111,33 @@ This can be done by configuring the DHCP-Client (on the Pi) to advertise a stati
 
 - Replace `[COUNTRY_CODE]` with the [ISO2 code](https://www.iso.org/obp/ui/#search){:target="\_blank"} of your country (eg. `US`)
 - Replace `[WIFI_SSID]` and `[WIFI_PASSWORD]` with the credentials for your own WiFi.
+
+### Using Umbrel on testnet/regtest
+
+This guide is **only for Umbrel OS** and does not work on manual installations.
+
+To change from mainnet to testnet on your Umbrel, connect to your RPi via SSH (Open a terminal on your computer and enter `ssh umbrel@umbrel.local` and enter the password `moneyprintergobrrr`) and run the following commands:
+
+```
+cd ~/umbrel
+sudo ./scripts/stop
+sudo NETWORK=testnet ./scripts/configure
+sudo systemctl restart umbrel-startup
+```
+
+### Manually accessing `bitcon-cli` and `lncli`
+
+On Umbrel, these binaries are always available in UMBREL_ROOT_DIR/bin/. On Umbrel OS, you can access them over SSH as
+
+```
+~/umbrel/bin/bitcoin-cli
+```
+
+and
+
+```
+~/umbrel/bin/lncli
+```
 
 ---
 

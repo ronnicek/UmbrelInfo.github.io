@@ -1,7 +1,7 @@
 ---
 layout: default
 title: FAQ
-nav_order: 10
+nav_order: 20
 ---
 # Frequently Asked Questions
 {: .no_toc }
@@ -16,15 +16,15 @@ Issues concerning the primary operations of your Umbrel node can be found in the
 1. TOC
 {:toc}
 
-## Can I get rich by routing Lightning payments?
+### Can I get rich by routing Lightning payments?
 
 Nobody knows. Probably not. You will get minimal fees. I don't care. Enjoy the ride!
 
-## Can I attach the Ext4 formatted hard disk to my Windows computer?
+### Can I attach the Ext4 formatted hard disk to my Windows computer?
 
 The Ext4 file system is not compatible with standard Windows, but with additional software like [Linux File Systems](https://www.paragon-software.com/home/linuxfs-windows/#faq) by Paragon Software (they offer a 10 days free trial) it is possible.
 
-## What do all the Linux commands do?
+### What do all the Linux commands do?
 
 This is a (very) short list of common Linux commands for your reference. For a specific command, you can enter `man [command]` to display the manual page (type `q` to exit).
 
@@ -49,7 +49,7 @@ This is a (very) short list of common Linux commands for your reference. For a s
 | `htop`       | monitor processes & resource usage | `htop`                                       |
 | `shutdown`   | shutdown or restart Pi             | `sudo shutdown -r now`                       |
 
-## Where can I get more information?
+### Where can I get more information?
 
 If you want to learn more about Bitcoin and are curious about the inner workings of the Lightning Network, the following articles in Bitcoin Magazine offer a very good introduction:
 
@@ -57,9 +57,9 @@ If you want to learn more about Bitcoin and are curious about the inner workings
 - [Understanding the Lightning Network](https://bitcoinmagazine.com/articles/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel-1464710791/)
 - [Bitcoin resources](https://www.lopp.net/bitcoin-information.html) and [Lightning Network resources](https://www.lopp.net/lightning-information.html) by Jameson Lopp
 
-## Does Umbrel support .....?
+### Does Umbrel support .....?
 
-Currently not, but the we are working on an application infrastructure, so third-party developers can add their own apps to Umbrel and publish them in its [App Store](https://medium.com/getumbrel/introducing-the-umbrel-app-store-7a2068c64a10).
+Currently not, but Umbrel has an application infrastructure, so third-party developers can add apps to Umbrel and publish them in its [App Store](https://medium.com/getumbrel/introducing-the-umbrel-app-store-7a2068c64a10).
 
 ---
 
