@@ -5,7 +5,6 @@ nav_order: 10
 ---
 
 # Troubleshooting
-
 {: .no_toc }
 
 Issues concerning the primary operations of your Umbrel node.
@@ -17,13 +16,10 @@ If you see any discrepancies from the expected output, double check how you set 
 General questions and further learnings regarding the technology used in Umbrel can be found in the separate [General FAQ](faq.md).
 
 ## Table of contents
-
 {: .no_toc .text-delta }
 
 1. TOC
-   {:toc}
-
-## Common problems
+{:toc}
 
 ### Can I login using SSH?
 

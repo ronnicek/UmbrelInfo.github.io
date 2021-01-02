@@ -19,7 +19,6 @@ This page is intended to answer your questions about Umbrel.
 ---
 
 ## Table of contents
-
 {: .no_toc .text-delta }
 
 1. TOC
