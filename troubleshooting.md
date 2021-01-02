@@ -112,7 +112,7 @@ This can be done by configuring the DHCP-Client (on the Pi) to advertise a stati
 
 This guide is **only for Umbrel OS** and does not work on manual installations.
 
-To change from mainnet to testnet on your Umbrel, connect to your RPi via SSH (Open a terminal on your computer and enter `ssh umbrel@umbrel.local` and enter the password `moneyprintergobrrr`) and run the following commands:
+To change from mainnet to testnet on your Umbrel, [connect to your RPi via SSH](https://umbrelinfo.github.io/troubleshooting.html#can-i-login-using-ssh) and run the following commands:
 
 ```
 cd ~/umbrel
