@@ -112,7 +112,7 @@ This can be done by configuring the DHCP-Client (on the Pi) to advertise a stati
 
 This guide is **only for Umbrel OS** and does not work on manual installations.
 
-To change from mainnet to testnet on your Umbrel, [connect to your RPi via SSH](https://umbrelinfo.github.io/troubleshooting.html#can-i-login-using-ssh) and run the following commands:
+To change from mainnet to testnet on your Umbrel, [connect to your RPi via SSH](#can-i-login-using-ssh) and run the following commands:
 
 ```
 cd ~/umbrel
@@ -123,7 +123,7 @@ sudo systemctl restart umbrel-startup
 
 ### Manually accessing `bitcon-cli` and `lncli`
 
-On Umbrel, these binaries are always available in UMBREL_ROOT_DIR/bin/. On Umbrel OS, you can access them over SSH as
+On Umbrel, these binaries are always available in UMBREL_ROOT_DIR/bin/. On Umbrel OS, you can [access them over SSH](#can-i-login-using-ssh) as
 
 ```
 ~/umbrel/bin/bitcoin-cli
