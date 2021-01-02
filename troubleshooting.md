@@ -132,7 +132,7 @@ docker exec bitcoin bitcoin-cli
 and
 
 ```
-docker lncli
+docker exec lnd lncli
 ```
 
 ---
