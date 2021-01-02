@@ -43,6 +43,6 @@ We do not recommend running it with much money yet.
 
 ---
 
-This page is pat of [Umbrel Plus](https://UmbrelPlus.gitlab.io)
+This page is pat of [Umbrel Plus](https://UmbrelPlus.gitlab.io), a free service extending your Umbrel node.
 
 ---
