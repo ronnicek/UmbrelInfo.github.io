@@ -135,6 +135,14 @@ and
 docker exec lnd lncli
 ```
 
+### Reset the web ui password in case you lost it
+
+Do this only if you **do not have any funds** on your LND wallet!
+
+```
+sudo systemctl stop umbrel-startup && sudo rm -rf ~/umbrel/lnd/!(lnd.conf) && sudo rm ~/umbrel/db/user.json && sudo rm ~/umbrel/db/umbrel-seed/seed && sudo systemctl start umbrel-startup
+```
+
 ---
 
 This troubleshooting guide will be constantly updated with findings that have been or will be reported in the issues section. Feel free to contribute via a pull request.
