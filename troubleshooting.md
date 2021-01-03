@@ -126,13 +126,13 @@ sudo systemctl restart umbrel-startup
 On Umbrel, these binaries are always available in UMBREL_ROOT_DIR/bin/. On Umbrel OS, you can [access them over SSH](#can-i-login-using-ssh) as
 
 ```
-docker exec bitcoin bitcoin-cli
+~/umbrel/bin/bitcoin-cli
 ```
 
 and
 
 ```
-docker exec lnd lncli
+~/umbrel/bin/lncli
 ```
 
 ### Reset the web ui password in case you lost it
