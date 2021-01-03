@@ -135,7 +135,7 @@ and
 ~/umbrel/bin/lncli
 ```
 
-# Reset the web ui password in case you lost it
+### Reset the web ui password in case you lost it
 
 Do this only if you **do not have any funds** on your LND wallet!
 
