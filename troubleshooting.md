@@ -51,7 +51,7 @@ If you can't access the dashboard via the IP address either,
 try to disconnect the drive from the Raspberry Pi and plug it into the other USB port.
 Then SSH into your node and run: `sudo systemctl start umbrel-external-storage`.
 After you've run the command, wait for two minutes, then run `sudo systemctl status umbrel-external-storage`.
-If the output of that command contains "Exiting the mount script without anything", the drive is connected wrongly.
+If the output of that command contains "Exiting the mount script without doing anything", the drive is connected wrongly.
 If the output doesn't contain this text, run `sudo systemctl start umbrel-startup`.
 You should now be able to access the dashboard.
 
