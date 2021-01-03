@@ -143,6 +143,21 @@ Do this only if you **do not have any funds** on your LND wallet!
 sudo systemctl stop umbrel-startup && sudo rm -rf ~/umbrel/lnd/!(lnd.conf) && sudo rm ~/umbrel/db/user.json && sudo rm ~/umbrel/db/umbrel-seed/seed && sudo systemctl start umbrel-startup
 ```
 
+### Manually updating Umbrel
+
+To manually update your node, run these commands [over SSH](#can-i-login-using-ssh):
+
+```
+cd ~/umbrel && sudo ./scripts/update/update --ota
+```
+
+
+If the update was stuck, run this before the above command:
+
+```
+sudo rm statuses/update-in-progress 
+```
+
 ---
 
 This troubleshooting guide will be constantly updated with findings that have been or will be reported in the issues section. Feel free to contribute via a pull request.
