@@ -148,9 +148,10 @@ sudo systemctl stop umbrel-startup && sudo rm -rf ~/umbrel/lnd/!(lnd.conf) && su
 To manually update your node, run these commands [over SSH](#can-i-login-using-ssh):
 
 ```
-cd ~/umbrel && sudo ./scripts/update/update --ota
+cd ~/umbrel && sudo ./scripts/update/update --repo getumbrel/umbrel#v0.3.1
 ```
 
+Replace v0.3.1 with the version you want to update to. 
 
 If the update was stuck, run this before the above command:
 
