@@ -14,7 +14,7 @@ This page is intended to answer your questions about Umbrel.
 ---
 
  This page is not an official Umbrel page.
- In addition, this page only applies to the latest version of Umbrel (currently v0.3.0).
+ In addition, this page only applies to the latest version of Umbrel (currently v0.3.1).
 
 ---
 
@@ -43,6 +43,6 @@ We do not recommend running it with much money yet.
 
 ---
 
-This page is pat of [Umbrel Plus](https://UmbrelPlus.gitlab.io)
+This page is part of [Umbrel Labs](https://UmbrelLabs.gitlab.io), a free service extending your Umbrel node.
 
 ---

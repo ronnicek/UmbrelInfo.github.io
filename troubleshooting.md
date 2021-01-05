@@ -51,7 +51,7 @@ If you can't access the dashboard via the IP address either,
 try to disconnect the drive from the Raspberry Pi and plug it into the other USB port.
 Then SSH into your node and run: `sudo systemctl start umbrel-external-storage`.
 After you've run the command, wait for two minutes, then run `sudo systemctl status umbrel-external-storage`.
-If the output of that command contains "Exiting the mount script without anything", the drive is connected wrongly.
+If the output of that command contains "Exiting the mount script without doing anything", the drive is connected wrongly.
 If the output doesn't contain this text, run `sudo systemctl start umbrel-startup`.
 You should now be able to access the dashboard.
 
@@ -112,7 +112,7 @@ This can be done by configuring the DHCP-Client (on the Pi) to advertise a stati
 
 This guide is **only for Umbrel OS** and does not work on manual installations.
 
-To change from mainnet to testnet on your Umbrel, connect to your RPi via SSH (Open a terminal on your computer and enter `ssh umbrel@umbrel.local` and enter the password `moneyprintergobrrr`) and run the following commands:
+To change from mainnet to testnet on your Umbrel, [connect to your RPi via SSH](#can-i-login-using-ssh) and run the following commands:
 
 ```
 cd ~/umbrel
@@ -123,7 +123,7 @@ sudo systemctl restart umbrel-startup
 
 ### Manually accessing `bitcon-cli` and `lncli`
 
-On Umbrel, these binaries are always available in UMBREL_ROOT_DIR/bin/. On Umbrel OS, you can access them over SSH as
+On Umbrel, these binaries are always available in UMBREL_ROOT_DIR/bin/. On Umbrel OS, you can [access them over SSH](#can-i-login-using-ssh) as
 
 ```
 ~/umbrel/bin/bitcoin-cli
@@ -133,6 +133,30 @@ and
 
 ```
 ~/umbrel/bin/lncli
+```
+
+### Reset the web ui password in case you lost it
+
+Do this only if you **do not have any funds** on your LND wallet!
+
+```
+sudo systemctl stop umbrel-startup && sudo rm -rf ~/umbrel/lnd/!(lnd.conf) && sudo rm ~/umbrel/db/user.json && sudo rm ~/umbrel/db/umbrel-seed/seed && sudo systemctl start umbrel-startup
+```
+
+### Manually updating Umbrel
+
+To manually update your node, run these commands [over SSH](#can-i-login-using-ssh):
+
+```
+cd ~/umbrel && sudo ./scripts/update/update --repo getumbrel/umbrel#v0.3.1
+```
+
+Replace v0.3.1 with the version you want to update to. 
+
+If the update was stuck, run this before the above command:
+
+```
+sudo rm statuses/update-in-progress 
 ```
 
 ---
