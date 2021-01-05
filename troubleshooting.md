@@ -135,9 +135,9 @@ and
 ~/umbrel/bin/lncli
 ```
 
-### Reset the web ui password in case you lost it
+### Reset your Umbrel user data (if you lost your password)
 
-Do this only if you **do not have any funds** on your LND wallet!
+Do this only if you **do not have any funds** on your LND wallet! If you have funds, then save your seed + backup file so you are able to restore it later if needed.
 
 You are going to loose your seed, settings, data and applications!
 
