@@ -139,6 +139,8 @@ and
 
 Do this only if you **do not have any funds** on your LND wallet!
 
+You are going to loose seed / settings / user data / application installed!
+
 ```
 sudo systemctl stop umbrel-startup && sudo rm -rf ~/umbrel/lnd/!(lnd.conf) && sudo rm ~/umbrel/db/user.json && sudo rm ~/umbrel/db/umbrel-seed/seed && sudo systemctl start umbrel-startup
 ```
